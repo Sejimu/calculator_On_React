@@ -1,12 +1,14 @@
 import React from "react";
 
-let symbol = ["*", "/", "+", "-", "%", "="];
+let symbol = ["*", "/", "+", "-", "%"];
 
-function Symbol() {
+function Symbol({ onClickSymbol }) {
   return (
     <div>
       {symbol.map((item, index) => (
-        <button key={index}>{item}</button>
+        <button onClick={() => onClickSymbol(item)} key={index}>
+          {item}
+        </button>
       ))}
     </div>
   );

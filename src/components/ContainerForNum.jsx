@@ -1,6 +1,6 @@
 import React from "react";
 
-let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0];
 
 function ContainerForNum({ onNumberClick }) {
   return (
